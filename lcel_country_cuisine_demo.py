@@ -33,7 +33,7 @@ speech_prompt = PromptTemplate(
 first_chain = title_prompt | llm | StrOutputParser()
 second_chain = speech_prompt | llm
 final_chain = first_chain | second_chain
-st.title("Country Cuisine Generator App")
+st.title("Planet of Plates - World cuisine App")
 
 country = st.text_input("Enter the country:")
 
